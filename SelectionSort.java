@@ -1,16 +1,12 @@
 public class SelectionSort {
-    public static void main(String args[]){
-        int data[] = {4,6,2,9,1,-65,987};
-        sort(data);
-    }
-    public static void sort(int data[]){
-        for (int i = 0; i < data.length; i++){
-            for (int j = i + 1; j < data.length; j++){
-                if (data[j] < data[i]){
-                    int swap;
-                    swap = data[i];
-                    data[i] = data[j];
-                    data[j] = swap;
+    public static void selectionsort(Comparable[] array){
+        for (int i = 0; i < array.length; i++){
+            for (int j = i + 1; j < array.length; j++){
+                if (array[j].compareTo(array[i]) < 0){
+                    Comparable swap;
+                    swap = array[i];
+                    array[i] = array[j];
+                    array[j] = swap;
                 }
             }
         }
