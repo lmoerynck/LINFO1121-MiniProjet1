@@ -1,4 +1,4 @@
-public class InsertionSort {
+public class SelectionSort {
     public static void main(String args[]){
         int data[] = {4,6,2,9,1,-65,987};
         sort(data);
