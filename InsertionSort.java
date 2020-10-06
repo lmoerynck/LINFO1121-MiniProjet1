@@ -10,7 +10,7 @@ public class InsertionSort {
                     int swap;
                     swap = data[i];
                     data[i] = data[j];
-                    data[j] = (char) swap;
+                    data[j] = swap;
                 }
             }
         }
